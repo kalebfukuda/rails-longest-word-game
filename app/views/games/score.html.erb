@@ -1,0 +1,9 @@
+<h1>score</h1>
+<div class="text-start">
+  <ul class="list-group">
+    <% @messages.each do |message| %>
+      <li class="list-group-item"><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<%= link_to 'Play again', new_path, class: "btn btn-primary mt-2"  %>
