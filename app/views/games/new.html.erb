@@ -10,7 +10,7 @@
     <% end %>
   </div>
   <div class="mt-2">
-    <form action="/score" method="get" data-turbo="false" class="form-group">
+    <form action="/score" method="post" data-turbo="false" class="form-group">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <p>What is the longest word you can find?</p>
       <input class="form-control" type="text" name="word">
